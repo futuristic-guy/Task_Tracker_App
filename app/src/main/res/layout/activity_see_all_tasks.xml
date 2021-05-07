@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pallete_color"
+    tools:context=".SeeAllTasks">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/seeAllTaskRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:paddingBottom="10dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:cardCornerRadius="10dp"
+        android:padding="0dp"
+        >
+    <LinearLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:padding="20dp"
+       android:orientation="horizontal"
+        android:background="@color/button_background"
+        android:weightSum="2"
+        android:gravity="center"
+
+        >
+        <EditText
+            android:id="@+id/idOfTaskToMove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:textColorHint="@color/screen_background"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/screen_background"
+            android:hint="Task Id to set it in Progress"
+            />
+        <Button
+            android:id="@+id/moveToProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/screen_background"
+            android:text="Set"
+            android:elevation="@dimen/cardview_default_elevation"
+            android:textColor="@color/button_background"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
