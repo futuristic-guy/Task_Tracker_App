@@ -1,6 +1,6 @@
 <h1>Task Tracker</h1>
 
-<p><b>Category:</b> This Kind of Todo Application</p>
+<p><b>Category:</b>Kind of Todo Application</p>
 
 
 <h4>Functionality : </h4>
