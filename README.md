@@ -13,6 +13,7 @@
 <li>SQLite Database</li>
 <li>RecyclerView </li>
 <li>Mathematics</li>
+<li>Activity LifeCycle</li>
 </ul>
 
 
